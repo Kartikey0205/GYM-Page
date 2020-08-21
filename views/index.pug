@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Using Plain HTML in Pug</title> -->
+    <title>#{title}</title>
+
+    <!-- CSS aise include kru -->
+    style
+          include ../static/style.css
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+
+        <h2>Get this Gym membership for 60 Rs.- Fill this form now !!</h2>
+        <!-- <p>
+            | #{content}
+            | This is a plain HTML using PUG 
+            
+        </p> -->
+        <form action="/" method="post" id="contact" >
+            <input type="text" name="name" id="name" placeholder="Enter your Name">
+            <input type="text" name="age" id="age" placeholder="Enter your Age">
+            <input type="email" name="email" placeholder="Enter your Email" required>
+            <input type="text" name="gender" id="gender" placeholder="Enter your gender">
+            <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your Address"></textarea>
+            <textarea name="more" id="more" cols="30" rows="10" placeholder="More About You"></textarea>
+            <button type="submit" class="btn"> Submit </button>
+        </form>
+    </div>
+
+</body>
+
+</html>
+<!-- basically y abbi ek pug template k trh render ho rha h toh agr HTML k trh render krwna h toh | pipe dena pdega -->

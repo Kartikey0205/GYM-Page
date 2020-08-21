@@ -1,0 +1,1 @@
+console.log("Kartikey is a good boy");
